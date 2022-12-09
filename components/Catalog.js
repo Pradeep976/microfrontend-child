@@ -22,14 +22,15 @@ export const Catalog = () => {
     }, [])
 
     return <div>
-        <Link href="/">Go Back</Link>
-        <div style={{ display: "flex", width: "750px", gap: "20px", flexWrap: "wrap", marginTop: "25px" }}>
-            {list.map(d => {
-                return <div key={d.id} style={cardStyle}>
-                    <p>{d.userId} {d.title}</p>
-                </div>
-            })}
-        </div>
+        <h2>This is the Catalog Component from the child App</h2>
+        {/*<Link href="/">Go Back</Link>*/}
+        {/*<div style={{ display: "flex", width: "750px", gap: "20px", flexWrap: "wrap", marginTop: "25px" }}>*/}
+        {/*    {list.map(d => {*/}
+        {/*        return <div key={d.id} style={cardStyle}>*/}
+        {/*            <p>{d.userId} {d.title}</p>*/}
+        {/*        </div>*/}
+        {/*    })}*/}
+        {/*</div>*/}
     </div>
 }
 export default Catalog;
