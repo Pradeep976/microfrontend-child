@@ -12,7 +12,7 @@ const nextConfig = {
             new NextFederationPlugin({
                 name: 'child',
                 remotes: {
-                    container: `container@http://localhost:3000/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`,
+                    container: `container@https://microfrontend-container-two.vercel.app/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`
                 },
                 filename: 'static/chunks/remoteEntry.js',
                 exposes: {
