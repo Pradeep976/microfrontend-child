@@ -15,7 +15,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <Nav>This is the Nav Component in Child App</Nav>
+            <Nav>This is the Nav Component in Child Appp</Nav>
             <main className={styles.main}>
                 <h1 className={styles.title}>
                     Welcome to the Child App
