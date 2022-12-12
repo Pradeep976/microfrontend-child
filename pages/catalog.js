@@ -1,11 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import dynamic from 'next/dynamic'
 import CatalogComponent from "../components/Catalog";
-
-const Nav = dynamic(() => import('container/nav'));
-const Footer = dynamic(() => import('container/footer'));
 
 export default function Catalog() {
     return (
@@ -16,7 +11,6 @@ export default function Catalog() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <Nav>This is the Nav Component in Child App</Nav>
             <main className={styles.main}>
                 <h1 className={styles.title}>
                     This is the Catalog Page in Child App
@@ -25,8 +19,6 @@ export default function Catalog() {
 
                 <CatalogComponent />
             </main>
-
-            <Footer />
         </div>
     )
 }

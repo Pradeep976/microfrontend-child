@@ -11,9 +11,7 @@ const nextConfig = {
         config.plugins.push(
             new NextFederationPlugin({
                 name: 'child',
-                remotes: {
-                    container: `container@https://microfrontend-container-two.vercel.app/_next/static/${isServer ? 'ssr' : 'chunks'}/remoteEntry.js`
-                },
+                remotes: {},
                 filename: 'static/chunks/remoteEntry.js',
                 exposes: {
                   './catalog': './components/Catalog.js'
