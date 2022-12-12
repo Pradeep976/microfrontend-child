@@ -4,8 +4,8 @@ import styles from '../styles/Home.module.css'
 import dynamic from 'next/dynamic'
 import CatalogComponent from "../components/Catalog";
 
-const Nav = dynamic(() => import('container/nav'));
-const Footer = dynamic(() => import('container/footer'));
+const Nav = dynamic(() => import('container.js/nav'));
+const Footer = dynamic(() => import('container.js/footer'));
 
 export default function Catalog() {
     return (
